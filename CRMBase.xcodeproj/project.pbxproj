@@ -15,6 +15,8 @@
 		C79970BC1DE56FC700975B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79970BA1DE56FC700975B85 /* LaunchScreen.storyboard */; };
 		C79970C71DE56FC700975B85 /* CRMBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79970C61DE56FC700975B85 /* CRMBaseTests.swift */; };
 		C79970D21DE56FC700975B85 /* CRMBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79970D11DE56FC700975B85 /* CRMBaseUITests.swift */; };
+		C79970E11DE5B6B300975B85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79970E01DE5B6B300975B85 /* Constants.swift */; };
+		C79970E31DE5B90900975B85 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79970E21DE5B90900975B85 /* Commons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C79970CD1DE56FC700975B85 /* CRMBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CRMBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79970D11DE56FC700975B85 /* CRMBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRMBaseUITests.swift; sourceTree = "<group>"; };
 		C79970D31DE56FC700975B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C79970E01DE5B6B300975B85 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C79970E21DE5B90900975B85 /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		C79970AD1DE56FC700975B85 /* CRMBase */ = {
 			isa = PBXGroup;
 			children = (
+				C79970DF1DE5B68E00975B85 /* Constants */,
 				C79970AE1DE56FC700975B85 /* AppDelegate.swift */,
 				C79970B01DE56FC700975B85 /* ViewController.swift */,
 				C79970B21DE56FC700975B85 /* Main.storyboard */,
@@ -126,6 +131,15 @@
 				C79970D31DE56FC700975B85 /* Info.plist */,
 			);
 			path = CRMBaseUITests;
+			sourceTree = "<group>";
+		};
+		C79970DF1DE5B68E00975B85 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C79970E01DE5B6B300975B85 /* Constants.swift */,
+				C79970E21DE5B90900975B85 /* Commons.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +278,9 @@
 			files = (
 				C79970B11DE56FC700975B85 /* ViewController.swift in Sources */,
 				C79970AF1DE56FC700975B85 /* AppDelegate.swift in Sources */,
+				C79970E31DE5B90900975B85 /* Commons.swift in Sources */,
 				C79970B71DE56FC700975B85 /* CRMBase.xcdatamodeld in Sources */,
+				C79970E11DE5B6B300975B85 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

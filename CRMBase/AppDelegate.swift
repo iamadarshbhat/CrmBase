@@ -9,6 +9,10 @@
 import UIKit
 import CoreData
 
+
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,8 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+        
+        
+        if Commons.getUUID().isEmpty{
+        let uuid =  UIDevice.current.identifierForVendor?.uuidString
+        let userDefaults =  UserDefaults()
+        userDefaults.set(uuid, forKey:Constants.UUID)
+        userDefaults.synchronize()
+        }
+        
+    
+        
+     return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
